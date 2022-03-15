@@ -1,0 +1,2831 @@
+(edif
+	(rename &2_Bit_Multiplier "2_Bit_Multiplier")
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2021 12 10 14 01 44)
+			(author "Mohit-Rawat")
+			(program "Tanner S-Edit"
+				(version "12.50 build 3139")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+	(external spice
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell BJT_NPN
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INOUT)
+					)
+					(port C
+						(direction INOUT)
+					)
+					(port E
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 10 42 02")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell BJT_PNP
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INOUT)
+					)
+					(port C
+						(direction INOUT)
+					)
+					(port E
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 10 42 16")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Capacitor
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 13 02 24")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell CCCS
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell CCVS
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Diode
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 11 44 40")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Gnd
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port Gnd
+						(direction INOUT)
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Inductor
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 01 16 14 38 59")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell JFET_N
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port D
+						(direction INOUT)
+					)
+					(port G
+						(direction INOUT)
+					)
+					(port S
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 15 09")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell JFET_P
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port D
+						(direction INOUT)
+					)
+					(port G
+						(direction INOUT)
+					)
+					(port S
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 15 57")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell MESFET
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port D
+						(direction INOUT)
+					)
+					(port G
+						(direction INOUT)
+					)
+					(port S
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 10 47 31")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell MOSFET_N
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INOUT)
+					)
+					(port D
+						(direction INOUT)
+					)
+					(port G
+						(direction INOUT)
+					)
+					(port S
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 17 19 41")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell MOSFET_P
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port B
+						(direction INOUT)
+					)
+					(port D
+						(direction INOUT)
+					)
+					(port G
+						(direction INOUT)
+					)
+					(port S
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 17 20 21")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID2
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell PageID_Tanner_5x7
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1999 03 22 16 28 16")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Resistor
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 01 16 14 38 24")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_ac
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 13 05 53")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_bit
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 17 40")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_dc
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 13 58 37")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_pulse
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 19 02")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_pwl
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 59 28")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_i_sine
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 18 16")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_dc
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 15 34 38")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_ac
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 02 18")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_bit
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 09 57")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_pulse
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 15 47 37")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_pwl
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 16 31")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Source_v_sine
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 14 19 58")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Transformer
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg1
+						(direction INOUT)
+					)
+					(port neg2
+						(direction INOUT)
+					)
+					(port pos1
+						(direction INOUT)
+					)
+					(port pos2
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1998 01 16 14 40 33")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell TransLine_cpl2
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port refa
+						(direction INOUT)
+					)
+					(port refb
+						(direction INOUT)
+					)
+					(port tl1a
+						(direction INOUT)
+					)
+					(port tl1b
+						(direction INOUT)
+					)
+					(port tl2a
+						(direction INOUT)
+					)
+					(port tl2b
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 15 48 04")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell TransLine_cpl3
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port refa
+						(direction INOUT)
+					)
+					(port refb
+						(direction INOUT)
+					)
+					(port tl1a
+						(direction INOUT)
+					)
+					(port tl1b
+						(direction INOUT)
+					)
+					(port tl2a
+						(direction INOUT)
+					)
+					(port tl2b
+						(direction INOUT)
+					)
+					(port tl3a
+						(direction INOUT)
+					)
+					(port tl3b
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 28 15 48 22")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell TransLine_lossless
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port neg1
+						(direction INOUT)
+					)
+					(port neg2
+						(direction INOUT)
+					)
+					(port pos1
+						(direction INOUT)
+					)
+					(port pos2
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 14 28 48")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell TransLine_Lossy
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port pos1
+						(direction INOUT)
+					)
+					(port pos2
+						(direction INOUT)
+					)
+					(port ref1
+						(direction INOUT)
+					)
+					(port ref2
+						(direction INOUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1997 08 29 16 44 23")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell VCCS
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port cn
+						(direction INOUT)
+					)
+					(port cp
+						(direction INOUT)
+					)
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell VCVS
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port cn
+						(direction INOUT)
+					)
+					(port cp
+						(direction INOUT)
+					)
+					(port neg
+						(direction INOUT)
+					)
+					(port pos
+						(direction INOUT)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Vdd
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(port Vdd
+						(direction INOUT)
+						(property GLOBAL
+							(boolean
+								(true)
+							)
+						)
+					)
+					(symbol)
+				)
+			)
+		)
+		(cell Library
+			(cellType GENERIC)
+			(view view_1
+				(viewType SCHEMATIC)
+				(interface
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1999 03 25 14 56 36")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2006 07 10 18 48 14)
+						(author "S-Edit")
+						(dataOrigin "Tanner Research")
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "21")
+					)
+				)
+			)
+		)
+	)
+	(external AND
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell AND
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port F
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2021 12 10 13 38 26")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2021 11 30 04 14 56)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "4")
+					)
+				)
+			)
+		)
+	)
+	(external NOT
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell NOT
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port F
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2021 12 10 13 47 31")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2021 12 10 11 07 34)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "2")
+					)
+				)
+			)
+		)
+	)
+	(external XOR
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell XOR
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port F
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2021 12 10 13 47 31")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2021 12 10 11 23 45)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "8")
+					)
+				)
+			)
+		)
+	)
+	(external Half_Adder
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell Half_Adder
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port A
+						(direction INPUT)
+					)
+					(port B
+						(direction INPUT)
+					)
+					(port C
+						(direction OUTPUT)
+					)
+					(port S
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "2021 12 10 13 47 31")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol)
+				)
+				(status
+					(written
+						(timeStamp 2021 12 10 11 34 07)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "1")
+					)
+				)
+			)
+		)
+	)
+	(library
+		(rename &2_Bit_Multiplier "2_Bit_Multiplier")
+		(edifLevel 0)
+		(technology
+			(numberDefinition
+				(scale 1
+					(e 1 -12)
+					(unit CAPACITANCE)
+				)
+			(scale (e 2560000 0) (e 1270000 -4) (unit DISTANCE))
+			)
+			(figureGroup background
+				(visible
+					(true)
+				)
+				(color 0 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup device
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup wire
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup netlabel
+				(visible
+					(true)
+				)
+				(color 23 75 100)
+				(pathWidth 0)
+			)
+			(figureGroup text
+				(visible
+					(true)
+				)
+				(color 100 0 0)
+				(pathWidth 0)
+			)
+			(figureGroup portshape
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup pin
+				(visible
+					(true)
+				)
+				(color 100 0 100)
+				(pathWidth 0)
+			)
+			(figureGroup instance
+				(visible
+					(false)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup instance_with_name_visible
+				(visible
+					(true)
+				)
+				(color 85 80 0)
+				(pathWidth 0)
+			)
+			(figureGroup cellname
+				(visible
+					(false)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup cellname_with_name_visible
+				(visible
+					(true)
+				)
+				(color 0 80 40)
+				(pathWidth 0)
+			)
+			(figureGroup property
+				(visible
+					(true)
+				)
+				(color 75 75 75)
+				(pathWidth 0)
+			)
+		)
+		
+		(cell
+			(rename &2_Bit_Multiplier "2_Bit_Multiplier")
+			(cellType GENERIC)
+			(view view0
+				(viewType SCHEMATIC)
+				(interface
+					(port A0
+						(direction INPUT)
+					)
+					(port A1
+						(direction INPUT)
+					)
+					(port B0
+						(direction INPUT)
+					)
+					(port B1
+						(direction INPUT)
+					)
+					(port P0
+						(direction OUTPUT)
+					)
+					(port P1
+						(direction OUTPUT)
+					)
+					(port P2
+						(direction OUTPUT)
+					)
+					(port P3
+						(direction OUTPUT)
+					)
+					(property TannerStandard
+						(boolean
+							(true)
+						)
+						(property Timestamp
+							(string "1970 1 1 0 0 0")
+						)
+						(property RevisionCount
+							(string "0")
+						)
+					)
+					(symbol
+						(property TannerStandard
+							(boolean
+								(true)
+							)
+							(property Timestamp
+								(string "2021 12 10 14 01 44")
+							)
+							(property RevisionCount
+								(string "1")
+							)
+						)
+						(boundingBox
+							(rectangle
+								(pt -64 0)
+								(pt 96 160)
+							)
+						)
+						(keywordDisplay cell
+							(display
+								(figureGroupOverride cellname
+									(textHeight 32)
+								)
+							)
+						)
+						(keywordDisplay instance
+							(display
+								(figureGroupOverride instance
+									(textHeight 32)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "A0"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 32)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "B0"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 64)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "B1"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 96)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "A1"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 0 128)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "P0"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 32 32)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "P1"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 32 64)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "P2"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 32 96)
+									)
+								)
+							)
+						)
+						(annotate
+							(stringDisplay "P3"
+								(display
+									(figureGroupOverride text
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt 32 128)
+									)
+								)
+							)
+						)
+						(portImplementation
+							(name A0
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -64 32)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -64 32)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -68 28)
+									(pt -60 36)
+								)
+							)
+						)
+						(portImplementation
+							(name B0
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -64 64)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -64 64)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -68 60)
+									(pt -60 68)
+								)
+							)
+						)
+						(portImplementation
+							(name B1
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -64 96)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -64 96)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -68 92)
+									(pt -60 100)
+								)
+							)
+						)
+						(portImplementation
+							(name A1
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -64 128)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -64 128)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -68 124)
+									(pt -60 132)
+								)
+							)
+						)
+						(portImplementation
+							(name P0
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 96 32)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 96 32)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 92 28)
+									(pt 100 36)
+								)
+							)
+						)
+						(portImplementation
+							(name P1
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 96 64)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 96 64)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 92 60)
+									(pt 100 68)
+								)
+							)
+						)
+						(portImplementation
+							(name P2
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 96 96)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 96 96)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 92 92)
+									(pt 100 100)
+								)
+							)
+						)
+						(portImplementation
+							(name P3
+								(display
+									(figureGroupOverride pin
+										(visible
+											(false)
+										)
+										(textHeight 11)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 96 128)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 96 128)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 92 124)
+									(pt 100 132)
+								)
+							)
+						)
+						(figure device
+							(rectangle
+								(pt 0 0)
+								(pt 32 160)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -64 32)
+									(pt 0 32)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -64 64)
+									(pt 0 64)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -64 96)
+									(pt 0 96)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt -64 128)
+									(pt 0 128)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 96 32)
+									(pt 32 32)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 96 64)
+									(pt 32 64)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 96 96)
+									(pt 32 96)
+								)
+							)
+						)
+						(figure device
+							(path
+								(pointList
+									(pt 96 128)
+									(pt 32 128)
+								)
+							)
+						)
+					)
+				)
+				(status
+					(written
+						(timeStamp 2021 12 10 13 56 17)
+					)
+				)
+				(property TannerStandard
+					(boolean
+						(true)
+					)
+					(property RevisionCount
+						(string "4")
+					)
+				)
+				(contents
+					(page Page0
+						(portImplementation
+							(name A0
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -128 0)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -128 0)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -132 -4)
+									(pt -124 4)
+								)
+							)
+						)
+						(portImplementation
+							(name B0
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -128 -128)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -128 -128)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -132 -132)
+									(pt -124 -124)
+								)
+							)
+						)
+						(portImplementation
+							(name B1
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -128 -384)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -128 -384)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -132 -388)
+									(pt -124 -380)
+								)
+							)
+						)
+						(portImplementation
+							(name A1
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERRIGHT)
+									(origin
+										(pt -128 -256)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt -128 -256)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt -132 -260)
+									(pt -124 -252)
+								)
+							)
+						)
+						(portImplementation
+							(name P0
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 768 96)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 768 96)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 764 92)
+									(pt 772 100)
+								)
+							)
+						)
+						(portImplementation
+							(name P1
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 768 -64)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 768 -64)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 764 -68)
+									(pt 772 -60)
+								)
+							)
+						)
+						(portImplementation
+							(name P2
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 800 -256)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 800 -256)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 796 -260)
+									(pt 804 -252)
+								)
+							)
+						)
+						(portImplementation
+							(name P3
+								(display
+									(figureGroupOverride pin
+										(textHeight 57)
+									)
+									(justify CENTERLEFT)
+									(origin
+										(pt 800 -480)
+									)
+								)
+							)
+							(connectLocation
+								(figure portshape
+									(dot
+										(pt 800 -480)
+									)
+								)
+							)
+							(figure portshape
+								(rectangle
+									(pt 796 -484)
+									(pt 804 -476)
+								)
+							)
+						)
+						(instance AND_1
+							(viewRef view0
+								(cellRef AND
+									(libraryRef AND)
+								)
+							)
+							(transform
+								(origin
+									(pt 160 32)
+								)
+							)
+						)
+						(instance AND_2
+							(viewRef view0
+								(cellRef AND
+									(libraryRef AND)
+								)
+							)
+							(transform
+								(origin
+									(pt 160 -160)
+								)
+							)
+						)
+						(instance AND_3
+							(viewRef view0
+								(cellRef AND
+									(libraryRef AND)
+								)
+							)
+							(transform
+								(origin
+									(pt 160 -288)
+								)
+							)
+						)
+						(instance AND_4
+							(viewRef view0
+								(cellRef AND
+									(libraryRef AND)
+								)
+							)
+							(transform
+								(origin
+									(pt 160 -416)
+								)
+							)
+						)
+						(instance Half_Adder_1
+							(viewRef view0
+								(cellRef Half_Adder
+									(libraryRef Half_Adder)
+								)
+							)
+							(transform
+								(origin
+									(pt 480 -224)
+								)
+							)
+						)
+						(instance Half_Adder_2
+							(viewRef view0
+								(cellRef Half_Adder
+									(libraryRef Half_Adder)
+								)
+							)
+							(transform
+								(origin
+									(pt 448 -416)
+								)
+							)
+						)
+						(net A0
+							(joined
+								(portRef A0)
+								(portRef B
+									(instanceRef AND_1)
+								)
+								(portRef B
+									(instanceRef AND_3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -128 0)
+										(pt -128 96)
+										(pt 64 96)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 64 96)
+										(pt 64 -224)
+										(pt 96 -224)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 64 96)
+										(pt 96 96)
+									)
+								)
+							)
+						)
+						(net A1
+							(joined
+								(portRef A1)
+								(portRef A
+									(instanceRef AND_2)
+								)
+								(portRef B
+									(instanceRef AND_4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -128 -256)
+										(pt -32 -256)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -32 -256)
+										(pt -32 -352)
+										(pt 96 -352)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -32 -256)
+										(pt -32 -128)
+										(pt 96 -128)
+									)
+								)
+							)
+						)
+						(net B0
+							(joined
+								(portRef B0)
+								(portRef A
+									(instanceRef AND_1)
+								)
+								(portRef B
+									(instanceRef AND_2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -128 -128)
+										(pt -96 -128)
+										(pt -96 -96)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -96 -96)
+										(pt 96 -96)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -96 -96)
+										(pt -96 64)
+										(pt 96 64)
+									)
+								)
+							)
+						)
+						(net B1
+							(joined
+								(portRef B1)
+								(portRef A
+									(instanceRef AND_3)
+								)
+								(portRef A
+									(instanceRef AND_4)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -128 -384)
+										(pt -128 -288)
+										(pt 64 -288)
+										(pt 64 -256)
+										(pt 96 -256)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt -128 -384)
+										(pt 96 -384)
+									)
+								)
+							)
+						)
+						(net N_1
+							(joined
+								(portRef F
+									(instanceRef AND_2)
+								)
+								(portRef B
+									(instanceRef Half_Adder_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 256 -128)
+										(pt 384 -128)
+										(pt 384 -160)
+										(pt 416 -160)
+									)
+								)
+							)
+						)
+						(net N_2
+							(joined
+								(portRef F
+									(instanceRef AND_3)
+								)
+								(portRef A
+									(instanceRef Half_Adder_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 256 -256)
+										(pt 288 -256)
+										(pt 288 -192)
+										(pt 416 -192)
+									)
+								)
+							)
+						)
+						(net N_3
+							(joined
+								(portRef F
+									(instanceRef AND_4)
+								)
+								(portRef A
+									(instanceRef Half_Adder_2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 256 -384)
+										(pt 384 -384)
+									)
+								)
+							)
+						)
+						(net N_4
+							(joined
+								(portRef C
+									(instanceRef Half_Adder_1)
+								)
+								(portRef B
+									(instanceRef Half_Adder_2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 576 -160)
+										(pt 608 -160)
+										(pt 608 -288)
+										(pt 384 -288)
+										(pt 384 -352)
+									)
+								)
+							)
+						)
+						(net P0
+							(joined
+								(portRef P0)
+								(portRef F
+									(instanceRef AND_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 256 64)
+										(pt 768 64)
+										(pt 768 96)
+									)
+								)
+							)
+						)
+						(net P1
+							(joined
+								(portRef P1)
+								(portRef S
+									(instanceRef Half_Adder_1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 576 -192)
+										(pt 672 -192)
+										(pt 672 -64)
+										(pt 768 -64)
+									)
+								)
+							)
+						)
+						(net P2
+							(joined
+								(portRef P2)
+								(portRef S
+									(instanceRef Half_Adder_2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 544 -384)
+										(pt 736 -384)
+										(pt 736 -256)
+										(pt 800 -256)
+									)
+								)
+							)
+						)
+						(net P3
+							(joined
+								(portRef P3)
+								(portRef C
+									(instanceRef Half_Adder_2)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 544 -352)
+										(pt 640 -352)
+										(pt 640 -480)
+										(pt 800 -480)
+									)
+								)
+							)
+						)
+						(commentGraphics)
+					)
+				)
+			)
+		)
+	)
+)

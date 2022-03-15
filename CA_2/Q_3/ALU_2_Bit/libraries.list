@@ -1,0 +1,16 @@
+..\..\..\MUX\Mux_2x1
+..\..\..\CA_1\Q_1\Inverter
+..\..\..\MUX\Mux_4x1
+..\2_Bit_Divider
+..\2_Bit_Multiplier
+..\SUB_OP\Half_Subtractor
+..\..\..\GETES\OR
+..\SUB_OP\Full_Subtractor
+..\2_Bit_Subtractor
+..\..\..\CA_1\Q_4\FULL_ADDER
+..\..\..\GETES\AND
+..\..\..\GETES\XOR
+C:\PROGRAM FILES (X86)\TANNER EDA\TANNER TOOLS V12.5\S-EDIT\LIBRARIES\spice
+..\..\..\GETES\NOT
+..\..\..\Half_Adder
+..\2_Bit_Adder

@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design J-K-Flip-Flop -cell J_K_Flip_Flop -type schematic -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -49 -y0 -440 -x1 1347 -y1 217 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

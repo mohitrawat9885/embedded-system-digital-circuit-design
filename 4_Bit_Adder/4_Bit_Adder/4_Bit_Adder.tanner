@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design 4_Bit_Adder -cell 4BitAdder -type schematic -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -43 -y0 -507 -x1 2190 -y1 545 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Inverter -cell NOT_GATE -type symbol -newwindow
+window move -left 78 -top 78 -width 988 -height 374 -undock -normal 
+window fit -x0 -116 -y0 11 -x1 235 -y1 132 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

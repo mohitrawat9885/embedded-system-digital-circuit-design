@@ -1,0 +1,101 @@
+A = 1011
+B = 0011
+
+s= 1110
+c = 0
+
+Vin1 A0 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin2 B0 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin3 Cin Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin4 A1 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin5 B1 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+
+Vin6 A2 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+Vin7 B2 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin8 A3 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin9 B3 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+
+
+
+
+Vin1 A0 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin2 B0 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin3 Cin Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin4 A1 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+Vin5 B1 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+
+Vin6 A2 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin7 B2 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+
+Vin8 A3 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+Vin9 B3 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+Vdd Vdd Gnd 3.3V
+
+Vin1 A0 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin2 B0 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin3 Cin Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin4 A1 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin5 B1 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+
+Vin6 A2 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+Vin7 B2 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+Vin8 A3 Gnd pulse(0 3.3v 0 0 0 100n 100n)
+Vin9 B3 Gnd pulse(0 3.3v 100n 0 0 100n 100n)
+
+
+.Tran 1ns 100ns
+**.power Vdd A 10000ns
+.print V(A0) V(B0) V(Cin) V(A1) V(B1) V(A2) V(B2) V(A3) V(B3)
+.print V(S0) V(S1) V(S2) V(S3) V(Cout)
+
+
+
+
+A=1010
+B=0111
+
+
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+Vdd Vdd Gnd 5V
+
+Vin1 A0 Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+Vin2 B0 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin3 Cin Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+
+Vin4 A1 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin5 B1 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+
+Vin6 A2 Gnd pulse(0 5v 100n 1 1n 100n 100n)
+Vin7 B2 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+
+Vin8 A3 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin9 B3 Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+
+
+

@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design LFSR -cell LFSR -type schematic -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -323 -y0 -678 -x1 1541 -y1 384 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

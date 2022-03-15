@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design NAND -cell Cell0 -type schematic -newwindow
+window move -left -8 -top 112 -width 988 -height 374 -undock -max 
+window fit -x0 -1105 -y0 -844 -x1 1304 -y1 250 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

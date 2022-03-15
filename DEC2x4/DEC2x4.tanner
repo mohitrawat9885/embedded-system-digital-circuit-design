@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design DEC2x4 -cell DEC2x4 -type symbol -newwindow
+window move -left 114 -top 114 -width 1535 -height 796 -undock -max 
+window fit -x0 -117 -y0 -46 -x1 305 -y1 206 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

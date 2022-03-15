@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design NAND_GATE_3_IN -cell NAND_GATE_3_IN -type symbol -newwindow
+window move -left 78 -top 78 -width 988 -height 374 -undock -max 
+window fit -x0 -121 -y0 -65 -x1 425 -y1 193 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

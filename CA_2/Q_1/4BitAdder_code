@@ -1,0 +1,101 @@
+* SPICE export from S-Edit 12.50 Fri Dec 10 10:34:33 2021
+* Design:  4_Bit_Adder
+* Cell:    4BitAdder
+* View:    view0
+* Export as: Top-level Cell
+* Netlist port order: default
+* Exclude .model : no
+* Exclude .end: no
+* Expand paths: yes
+* Root path: D:\ECE\AnalogDesign\4_Bit_Adder\4_Bit_Adder
+* Exclude global pins on subcircuits: no
+* Export control property name: SPICE
+* Wrap lines: no (to 0 characters)
+
+********* Simulation Settings - General section *********
+
+*************** Subcircuits *****************
+.subckt FULL_ADDER A B Carry Cin Sum Gnd Vdd  
+MMOSFET_P_20 N_20 A Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_21 N_20 B Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_22 N_13 N_20 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_N_10 N_12 N_10 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_11 N_12 N_13 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_12 Carry N_12 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_13 N_16 N_4 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_14 N_19 N_18 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_15 N_17 Cin Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_16 Sum N_16 N_19 N_19 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_17 Sum N_4 N_17 N_17 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_18 N_18 Cin Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_19 N_13 N_20 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_P_1 N_1 A Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_2 N_2 N_3 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_3 N_4 B N_2 N_2 PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_4 N_3 A Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_5 N_4 N_6 N_1 N_1 PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_6 N_6 B Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_7 N_8 Cin Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_N_20 N_21 B Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_P_8 N_8 N_4 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_N_21 N_20 A N_21 N_21 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_P_9 N_10 N_8 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_N_1 N_4 A N_5 N_5 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_2 N_4 N_3 N_7 N_7 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_3 N_5 B Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_4 N_7 N_6 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_5 N_3 A Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_6 N_6 B Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_7 N_8 N_4 N_9 N_9 NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_8 N_9 Cin Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_N_9 N_10 N_8 Gnd Gnd NMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u 
+MMOSFET_P_10 N_11 N_10 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_11 N_11 N_10 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_12 N_12 N_13 N_11 N_11 PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_13 Carry N_12 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_14 N_16 N_4 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_15 Sum N_18 N_14 N_14 PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_16 Sum Cin N_15 N_15 PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_17 N_15 N_16 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_18 N_14 N_4 Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+MMOSFET_P_19 N_18 Cin Vdd Vdd PMOS L=2u W=22u AD=66p PD=24u AS=66p PS=24u
+.ends
+
+
+********* Simulation Settings - Parameters and SPICE Options *********
+
+XFULL_ADDER_1 A0 B0 N_1 Cin S0 Gnd Vdd FULL_ADDER  
+XFULL_ADDER_2 A1 B1 N_2 N_1 S1 Gnd Vdd FULL_ADDER  
+XFULL_ADDER_3 A2 B2 N_3 N_2 S2 Gnd Vdd FULL_ADDER  
+XFULL_ADDER_4 A3 B3 Cout N_3 S3 Gnd Vdd FULL_ADDER  
+
+********* Simulation Settings - Analysis section *********
+
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+Vdd Vdd Gnd 5V
+
+Vin1 A0 Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+Vin2 B0 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin3 Cin Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+
+Vin4 A1 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin5 B1 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+
+Vin6 A2 Gnd pulse(0 5v 100n 1 1n 100n 100n)
+Vin7 B2 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+
+Vin8 A3 Gnd pulse(0 5v 0 1n 1n 100n 100n)
+Vin9 B3 Gnd pulse(0 5v 100n 1n 1n 100n 100n)
+
+
+.Tran 1ns 100ns
+**.power Vdd A 10000ns
+*.print V(A0) V(B0) V(Cin) V(A1) V(B1) V(A2) V(B2) V(A3) V(B3)
+.print V(S0) V(S1) V(S2) V(S3) V(Cout)
+
+
+********* Simulation Settings - Additional SPICE commands *********
+
+.end
+

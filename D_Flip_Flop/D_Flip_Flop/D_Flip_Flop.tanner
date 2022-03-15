@@ -1,0 +1,8 @@
+workspace loadfrom -path .
+cell open -design {D_Flip_Flop\NAND} -cell DFF -type schematic -newwindow
+window move -left -48 -top 85 -width 988 -height 374 -undock -max 
+window fit -x0 -595 -y0 -441 -x1 856 -y1 218 -units iu
+
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design ALU_2_Bit -cell ALU_2_Bit -type schematic -newwindow
+window move -left 114 -top 114 -width 1541 -height 770 -undock -max 
+window fit -x0 18 -y0 -679 -x1 1730 -y1 321 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

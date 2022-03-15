@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Shift_Register_4bit -cell Shift_Register -type schematic -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -210 -y0 -492 -x1 2022 -y1 558 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

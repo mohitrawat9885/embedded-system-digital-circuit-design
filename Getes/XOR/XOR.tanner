@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design XOR -cell XOR -type symbol -newwindow
+window move -left 114 -top 114 -width 1508 -height 770 -undock -max 
+window fit -x0 -116 -y0 -77 -x1 305 -y1 174 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

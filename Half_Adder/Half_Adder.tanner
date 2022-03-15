@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Half_Adder -cell Half_Adder -type symbol -newwindow
+window move -left 114 -top 114 -width 1508 -height 770 -undock -max 
+window fit -x0 -118 -y0 -89 -x1 345 -y1 186 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

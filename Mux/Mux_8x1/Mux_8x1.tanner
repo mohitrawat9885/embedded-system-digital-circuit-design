@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Mux_8x1 -cell Mux8x1 -type schematic -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -1323 -y0 -994 -x1 1100 -y1 146 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

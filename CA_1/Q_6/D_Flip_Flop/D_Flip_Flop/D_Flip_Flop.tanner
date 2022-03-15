@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -cell LFSR -design D_Flip_Flop -type schematic -context D_Flip_Flop_1 -newwindow
+window move -left 78 -top 78 -width 988 -height 394 -undock -max 
+window fit -x0 -388 -y0 -252 -x1 818 -y1 317 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

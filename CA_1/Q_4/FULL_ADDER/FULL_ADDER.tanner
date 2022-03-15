@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design FULL_ADDER -cell FULL_ADDER -type symbol -newwindow
+window move -left -192 -top 60 -width 988 -height 374 -undock -max 
+window fit -x0 -132 -y0 -49 -x1 345 -y1 177 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

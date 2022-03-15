@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design 2_Bit_Multiplier -cell 2_Bit_Multiplier -type symbol -newwindow
+window move -left 114 -top 114 -width 1541 -height 770 -undock -max 
+window fit -x0 -131 -y0 -94 -x1 466 -y1 254 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user
+source open.design -relativeto design

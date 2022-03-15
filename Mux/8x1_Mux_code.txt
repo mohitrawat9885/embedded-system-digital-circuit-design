@@ -1,0 +1,38 @@
+I0 = 0
+I1 = 1
+I2 = 1
+I3 = 0
+I4 = 0
+I5 = 1
+I6 = 1
+I7 = 0
+
+
+
+
+
+
+
+
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+
+Vdd Vdd Gnd 3.3V
+
+Vin1 I0 Gnd pulse(0 3.3v 80n 1n 1n 80n 80n)
+Vin2 I1 Gnd pulse(0 3.3v 0 1n 1n 80n 80n)
+Vin3 I2 Gnd pulse(0 3.3v 0 1n 1n 80n 80n)
+Vin4 I3 Gnd pulse(0 3.3v 80n 1n 1n 80n 80n)
+Vin5 I4 Gnd pulse(0 3.3v 80n 1n 1n 80n 80n)
+Vin6 I5 Gnd pulse(0 3.3v 0 1n 1n 80n 80n)
+Vin7 I6 Gnd pulse(0 3.3v 0 1n 1n 80n 80n)
+Vin8 I7 Gnd pulse(0 3.3v 80n 1n 1n 80n 80n)
+
+
+Vin9 S0 Gnd pulse(0 3.3v 10n 1n 1n 10n 20n)
+Vin10 S1 Gnd pulse(0 3.3v 20n 1n 1n 20n 40n)
+Vin11 S2 Gnd pulse(0 3.3v 40n 1n 1n 40n 80n)
+
+.Tran 1ns 80ns
+**.print V(I0) V(I1) V(I2) V(I3) V(I4) V(I5) V(I6) V(I7)
+.print V(S0) V(S1) V(S2) V(Y)

@@ -1,0 +1,23 @@
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+
+Vdd Vdd Gnd 3.3V
+Vin clk Gnd pulse(0 3.3v 0 1n 1n 5n 10n)
+.Tran 1ns 100ns
+.print V(clk) V(Q3) V(Q2) V(Q1) V(Q0)
+
+
+
+.Model NMOS NMOS(Vto=0.8V Kp=45u Lambda=0.01 Gamma=0.4 phi=0.6)
+.Model PMOS PMOS (Vto=-0.9V Kp=33u Lambda=0.02 Gamma=0.4 phi=0.6)
+
+Vdd Vdd Gnd 3.3V
+Vin clk Gnd pulse(0 3.3v 0 1n 1n 5n 10n)
+
+Vin1 I3 Gnd pulse(0 3.3v 0 1n 1n 100n 100n)
+Vin2 I2 Gnd pulse(0 3.3v 0 1n 1n 100n 100n)
+Vin3 I1 Gnd pulse(0 3.3v 0 1n 1n 100n 100n)
+Vin4 I0 Gnd pulse(0 3.3v 0 1n 1n 1n 100n)
+
+.Tran 1ns 100ns
+.print V(clk) V(Q3) V(Q2) V(Q1) V(Q0)
